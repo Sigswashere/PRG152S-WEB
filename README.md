@@ -1,2 +1,2 @@
-# PRG152S-WEB
+# My first repo
 This is my first repository!
