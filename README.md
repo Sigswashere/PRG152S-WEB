@@ -1,2 +1,2 @@
-# My first repo
-This is my first repository!
+This is where it all starts.
+Let's do this and finish in time, happy coding.
