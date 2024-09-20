@@ -4,5 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - KeepITBlue</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .contact-form, .donors, .faqs, .team {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        .contact-form h2, .donors h2, .faqs h2, .team h2 {
+            color: #0073e6;
+        }
+        .contact-form label, .faqs label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #005bb5;
+        }
+        .donors ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .donors li {
+            margin-bottom: 0.5rem;
+        }
+        .faqs .faq {
+            margin-bottom: 1rem;
+        }
+        .faqs .faq h3 {
+            margin: 0;
+            color: #0073e6;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .team-member img {
+            border-radius: 50%;
+            margin-right: 1rem;
+            width: 100px;
+            height: 100px;
+        }
+        .team-member div {
+            max-width: 600px;
+        }
+    </style>
 </head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <div class="container">
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="process_contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="donors">
+            <h2>Our Big Company Donors</h2>
+            <ul>
+                <li>Company A</li>
+                <li>Company B</li>
+                <li>Company C</li>
+                <li>Company D</li>
+                <li>Company E</li>
+            </ul>
+        </div>
+        <div class="faqs">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <h3>What is KeepITBlue?</h3>
+                <p>KeepITBlue is a non-profit organization dedicated to cleaning up the major beaches of South Africa and raising awareness about ocean pollution.</p>
+            </div>
+            <div class="faq">
+                <h3>How can I volunteer?</h3>
+                <p>You can volunteer by visiting our <a href="volunteer.html">volunteer page</a> and filling out the registration form.</p>
+            </div>
+            <div class="faq">
+                <h3>How can I donate?</h3>
+                <p>You can donate by visiting our <a href="donate.html">donation page</a> and choosing your preferred payment method.</p>
+            </div>
+            <div class="faq">
+                <h3>What do you do with the donations?</h3>
+                <p>Donations are used to organize more cleanups, provide necessary equipment, and raise awareness about ocean pollution.</p>
+            </div>
+        </div>
+        <div class="team">
+            <h2>The People Behind KeepITBlue</h2>
+            <div class="team-member">
+                <img src="path_to_image1.jpg" alt="Team Member 1">
+                <div>
+                    <h3>Team Member 1</h3>
+                    <p>Role: Founder</p>
+                    <p>Description: Brief description of who they are and what drew them towards creating this NGO.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="path_to_image2.jpg" alt="Team Member 2">
+                <div>
+                    <h3>Team Member 2</h3>
+                    <p>Role: Co-Founder</p>
+                    <p>Description: Brief description of who they are and what drew them towards creating this NGO.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="path_to_image3.jpg" alt="Team Member 3">
+                <div>
+                    <h3>Team Member 3</h3>
+                    <p>Role: Project Manager</p>
+                    <p>Description: Brief description of who they are and what drew them towards creating this NGO.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="path_to_image4.jpg" alt="Team Member 4">
+                <div>
+                    <h3>Team Member 4</h3>
+                    <p>Role: Volunteer Coordinator</p>
+                    <p>Description: Brief description of who they are and what drew them towards creating this NGO.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="path_to_image5.jpg" alt="Team Member 5">
+                <div>
+                    <h3>Team Member 5</h3>
+                    <p>Role: Communications Director</p>
+                    <p>Description: Brief description of who they are and what drew them towards creating this NGO.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
